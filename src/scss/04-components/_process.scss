@@ -1,0 +1,44 @@
+.process {
+    &__title {
+        font-size: 3rem;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 1.5rem;
+        padding-bottom: 4rem;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 22rem;
+            margin: 1rem auto .4rem;
+            border-bottom: .2rem solid $color-white;
+        }
+
+        @include medium {
+            padding-bottom: 3rem;
+        }
+    }
+
+    &__icon {
+        font-size: 7rem;
+        color: $color-white;
+
+        @include medium {
+            font-size: 6rem;
+        }
+    }
+
+    &__h3 {
+        font-size: 3.3rem;
+        color: $color-white;
+        margin-top: 1rem;
+
+        @include medium {
+            font-size: 2.8rem;
+        }
+
+        @include large {
+            font-size: 3.5rem;
+        }
+    }
+}

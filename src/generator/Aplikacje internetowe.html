@@ -1,0 +1,67 @@
+<div class="form__content--second">
+    <form action="php/valuation.php" method="POST" class="valuation">
+        <fieldset class="form__field">
+            <h2 class="form__field--type">Aplikacja Internetowa</h2>
+            <div class="form__field--choice">
+                <input type="text" name="topicpageForm" required placeholder=" " autocomplete="off">
+                <label class="form__field--label required">Temat aplikacji</label>
+            </div>
+            <div class="form__field--choice">
+                <span class="form__field--text required">Opis aplikacji, funkcjonalność, uwagi</span>
+                <textarea name="commentsForm" class="form__field--comment" required placeholder=" " autocomplete="off"></textarea>
+            </div>
+            <div class="form__field--choice">
+                <input type="checkbox" class="form__field--checkbox-input" id="language">
+                    <label class="form__field--checkbox-label form__field--option" for="language">
+                        <span class="form__field--checkbox-span form__field--option-box">
+                            <svg class="form__field--checkbox-svg" width="12px" height="10px" viewbox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                            </svg>
+                        </span>
+                        <span class="form__field--checkbox-span form__field--option-text">Dodatkowe wersje językowe</span>
+                    </label>
+                    <div class="form__field--option-lang">
+                        <input type="text" name="langpageForm" placeholder=" " autocomplete="off">
+                        <label class="form__field--label">Podaj język</label>
+                    </div>
+            </div>
+            <div class="form__field--choice">
+                <input type="checkbox" class="form__field--checkbox-input" id="budget">
+                <label class="form__field--checkbox-label form__field--option" for="budget">
+                    <span class="form__field--checkbox-span form__field--option-box">
+                        <svg class="form__field--checkbox-svg" width="12px" height="10px" viewbox="0 0 12 10">
+                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                        </svg>
+                    </span>
+                    <span class="form__field--checkbox-span form__field--option-text">Chcę określić budżet</span>
+                </label>
+                <div class="form__field--range form__field--option-budget">
+                    <input type="range" name="budgetForm" class="form__field--range-input" min="600" max="15000" step="100" value="600">
+                    <span class="form__field--range-counter pln"></span>
+                </div>
+            </div>
+            <button type="button" class="form__field--button form__field--button-prev"><span class="form__field--button-text">Wróć do opcji</span></button>
+            <button type="button" class="form__field--button form__field--button-next"><span class="form__field--button-text">Kolejny krok</span></button>
+        </fieldset>
+        <fieldset class="form__field">
+            <h2 class="form__field--type">Aplikacja Internetowa</h2>
+            <div class="form__field--choice">
+                <input type="text" name="nameForm" required placeholder=" " autocomplete="off">
+                <label class="form__field--label required">Imię / Firma</label>
+            </div>
+            <div class="form__field--choice">
+                <input type="text" name="emailForm" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required placeholder=" ">
+                <label class="form__field--label required">Email</label>
+            </div>
+            <div class="form__field--choice">
+                <input type="text" name="urlForm" pattern="[^\s]+" placeholder=" " autocomplete="off">
+                <label class="form__field--label">Adres Strony</label>
+            </div>
+            <button type="button" class="form__field--button form__field--button-prev"><span class="form__field--button-text">Poprzedni krok</span></button>
+            <button type="submit" class="form__field--button form__field--button-next">Wyślij <span class="form__field--button-text">Formularz</span></button>
+        </fieldset>
+    </form>
+</div>
+    <script src="https://cdn.rawgit.com/eligrey/FileSaver.js/5ed507ef8aa53d8ecfea96d96bc7214cd2476fd2/FileSaver.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/generator.js"></script>

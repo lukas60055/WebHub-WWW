@@ -1,0 +1,69 @@
+.col {
+    width: 100%;
+    padding: 0 .5rem 1.5rem .5rem;
+
+    &--md50 {
+        @include medium {
+            flex: 0 0 50%;
+            // dla IE
+            max-width: 50%;
+        }
+    }
+
+    &--md33 {
+        @include medium {
+            flex: 0 0 33.333333%;
+            // dla IE
+            max-width: 33.333333%;
+        }
+    }
+
+    &--md25 {
+        @include medium {
+            flex: 0 0 25%;
+            // dla IE
+            max-width: 25%;
+        }
+    }
+
+    &--lg60 {
+        @include large {
+            flex: 0 0 60%;
+            // dla IE
+            max-width: 60%;
+        }
+    }
+
+    &--lg50 {
+        @include large {
+            flex: 0 0 50%;
+            // dla IE
+            max-width: 50%;
+        }
+    }
+
+    &--lg40 {
+        @include large {
+            flex: 0 0 40%;
+            // dla IE
+            max-width: 40%;
+        }
+    }
+
+    &--lg33 {
+        @include large {
+            flex: 0 0 33.333333%;
+            // dla IE
+            max-width: 33.333333%;
+        }
+    }
+
+
+    &--lg25 {
+        @include large {
+            flex: 0 0 25%;
+            // dla IE
+            max-width: 25%;
+        }
+    }
+}

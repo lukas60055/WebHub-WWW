@@ -1,0 +1,6 @@
+﻿
+["div", {"class":"form__content--second"}, "ERROR:eq(undefined)"],
+["form", {"action":"php/valuation.php","method":"POST","class":"valuation"}, "form__content--second:eq(0)"],
+["h2", {"class":"form__field--type form__title--h2"}, "valuation:eq(0)", {"0":"Dziękujemy za skorzystanie z Naszych usług!"}],
+["p", {"style":"text-align: center;"}, "valuation:eq(0)", {"null":"Już wkróte otrzymasz odpowiedź zwrotną na maila, z wyceną Twojej usługi."}],
+["a", {"href":"index.html","class":"form__title--link"}, "valuation:eq(0)", {"0":"Powrót na stronę główną"}]

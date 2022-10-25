@@ -1,0 +1,179 @@
+<div class="form__content--second">
+    <form action="php/valuation.php" method="POST" class="valuation">
+        <fieldset class="form__field">
+            <h2 class="form__field--type">Strona Wizerunkowa</h2>
+            <div class="form__field--choice">
+                <input type="text" name="topicpageForm" required placeholder=" " autocomplete="off">
+                <label class="form__field--label required">Tematyka strony</label>
+            </div>
+            <div class="form__field--choice">
+                <select name="updatepageForm" class="form-select" required autocomplete="off" style="cursor: pointer;">
+                    <option value=""></option>
+                    <option value="none">Strona nie będzie wymagała aktualizacji treści</option>
+                    <option value="cms">Strona z panelem CMS (Sam aktualizujesz treść)</option>
+                    <option value="webhub">My się zajmiemy aktualizacją treścią - Web-Hub</option>
+                    <option value="other">Inne</option>
+                </select>
+                <label class="form__field--label required">Aktualizacja treści strony</label>
+            </div>
+            <div class="form__field--choice">
+                <input type="text" name="colorpageForm" required placeholder=" " autocomplete="off">
+                <label class="form__field--label required">Kolorystyka</label>
+            </div>
+            <div class="form__field--choice">
+                <span class="form__field--text">Orientacyjnie ilość podstron</span>
+                <div class="form__field--range">
+                    <input type="range" name="subpageForm" class="form__field--range-input" max="30" step="1" value="0">
+                    <span class="form__field--range-counter"></span>
+                </div>
+            </div>
+            <div class="form__field--choice">
+                <span class="form__field--text">Dodatkowe elementy na stronie</span>
+                <div class="form__field--checkbox">
+                    <input type="checkbox" name="imageForm" class="form__field--checkbox-input" id="imageForm">
+                    <label class="form__field--checkbox-label" for="imageForm">
+                        <span class="form__field--checkbox-span">
+                            <svg class="form__field--checkbox-svg" width="12px" height="10px" viewbox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                            </svg>
+                        </span>
+                        <span class="form__field--checkbox-span">Galeria zdjęć</span>
+                    </label>
+                    <input type="checkbox" name="mapForm" class="form__field--checkbox-input" id="mapForm">
+                    <label class="form__field--checkbox-label" for="mapForm">
+                        <span class="form__field--checkbox-span">
+                            <svg class="form__field--checkbox-svg" width="12px" height="10px" viewbox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                            </svg>
+                        </span>
+                        <span class="form__field--checkbox-span">Mapa Google</span>
+                    </label>
+                    <input type="checkbox" name="counterForm" class="form__field--checkbox-input" id="counterForm">
+                    <label class="form__field--checkbox-label" for="counterForm">
+                        <span class="form__field--checkbox-span">
+                            <svg class="form__field--checkbox-svg" width="12px" height="10px" viewbox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                            </svg>
+                        </span>
+                        <span class="form__field--checkbox-span">Licznik odwiedzin</span>
+                    </label>
+                    <input type="checkbox" name="messengerForm" class="form__field--checkbox-input" id="messengerForm">
+                    <label class="form__field--checkbox-label" for="messengerForm">
+                        <span class="form__field--checkbox-span">
+                            <svg class="form__field--checkbox-svg" width="12px" height="10px" viewbox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                            </svg>
+                        </span>
+                        <span class="form__field--checkbox-span">Messenger - kontakt</span>
+                    </label>
+                    <input type="checkbox" name="contactForm" class="form__field--checkbox-input" id="contactForm">
+                    <label class="form__field--checkbox-label" for="contactForm">
+                        <span class="form__field--checkbox-span">
+                            <svg class="form__field--checkbox-svg" width="12px" height="10px" viewbox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                            </svg>
+                        </span>
+                        <span class="form__field--checkbox-span">Formularz kontaktowy</span>
+                    </label>
+                    <input type="checkbox" name="sliderForm" class="form__field--checkbox-input" id="sliderForm">
+                    <label class="form__field--checkbox-label" for="sliderForm">
+                        <span class="form__field--checkbox-span">
+                            <svg class="form__field--checkbox-svg" width="12px" height="10px" viewbox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                            </svg>
+                        </span>
+                        <span class="form__field--checkbox-span">Przewijany slider ze zdjęciami</span>
+                    </label>
+                </div>
+            </div>
+            <button type="button" class="form__field--button form__field--button-prev"><span class="form__field--button-text">Wróć do opcji</span></button>
+            <button type="button" class="form__field--button form__field--button-next"><span class="form__field--button-text">Kolejny krok</span></button>
+        </fieldset>
+        <fieldset class="form__field">
+            <h2 class="form__field--type">Strona Wizerunkowa</h2>
+            <div class="form__field--choice">
+                <span class="form__field--text">Linki do stron WWW, które Ci się podobają</span>
+                <div class="form__field--pages">
+                    <div class="form__field--pages-box">
+                        <input type="text" name="linkpageForm[]" class="form__field--pages-input" placeholder=" " autocomplete="off">
+                    </div>
+                    <div class="form__field--pages-box">
+                        <div class="form__field--pages-btn" id="add">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="form__field--pages-btn" id="del" style="opacity: .5;">
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form__field--choice">
+            <input type="checkbox" class="form__field--checkbox-input" id="language">
+                <label class="form__field--checkbox-label form__field--option" for="language">
+                    <span class="form__field--checkbox-span form__field--option-box">
+                        <svg class="form__field--checkbox-svg" width="12px" height="10px" viewbox="0 0 12 10">
+                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                        </svg>
+                    </span>
+                    <span class="form__field--checkbox-span form__field--option-text">Dodatkowe wersje językowe</span>
+                </label>
+                <div class="form__field--option-lang">
+                    <input type="text" name="langpageForm" placeholder=" " autocomplete="off">
+                    <label class="form__field--label">Podaj język</label>
+                </div>
+            </div>
+            <div class="form__field--choice">
+            <input type="checkbox" name="contentsForm" class="form__field--checkbox-input" id="contentsForm">
+                <label class="form__field--checkbox-label form__field--option" for="contentsForm">
+                    <span class="form__field--checkbox-span form__field--option-box">
+                        <svg class="form__field--checkbox-svg" width="12px" height="10px" viewbox="0 0 12 10">
+                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                        </svg>
+                    </span>
+                    <span class="form__field--checkbox-span form__field--option-text">Mamy zredagować treści i dodać własną grafikę?</span>
+                </label>
+            </div>
+            <div class="form__field--choice">
+                <input type="checkbox" class="form__field--checkbox-input" id="budget">
+                <label class="form__field--checkbox-label form__field--option" for="budget">
+                    <span class="form__field--checkbox-span form__field--option-box">
+                        <svg class="form__field--checkbox-svg" width="12px" height="10px" viewbox="0 0 12 10">
+                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                        </svg>
+                    </span>
+                    <span class="form__field--checkbox-span form__field--option-text">Chcę określić budżet</span>
+                </label>
+                <div class="form__field--range form__field--option-budget">
+                    <input type="range" name="budgetForm" class="form__field--range-input" max="10000" step="50" value="0">
+                    <span class="form__field--range-counter pln"></span>
+                </div>
+            </div>
+            <div class="form__field--choice">
+                <span class="form__field--text">Uwagi, wskazówki, propozycje</span>
+                <textarea name="commentsForm" class="form__field--comment" placeholder=" " autocomplete="off"></textarea>
+            </div>
+            <button type="button" class="form__field--button form__field--button-prev"><span class="form__field--button-text">Poprzedni krok</span></button>
+            <button type="button" class="form__field--button form__field--button-next"><span class="form__field--button-text">Kolejny krok</span></button>
+        </fieldset>
+        <fieldset class="form__field">
+            <h2 class="form__field--type">Strona Wizerunkowa</h2>
+            <div class="form__field--choice">
+                <input type="text" name="nameForm" required placeholder=" " autocomplete="off">
+                <label class="form__field--label required">Imię / Firma</label>
+            </div>
+            <div class="form__field--choice">
+                <input type="text" name="emailForm" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required placeholder=" ">
+                <label class="form__field--label required">Email</label>
+            </div>
+            <div class="form__field--choice">
+                <input type="text" name="urlForm" pattern="[^\s]+" required placeholder=" " autocomplete="off">
+                <label class="form__field--label required">Adres Strony</label>
+            </div>
+            <button type="button" class="form__field--button form__field--button-prev"><span class="form__field--button-text">Poprzedni krok</span></button>
+            <button type="submit" class="form__field--button form__field--button-next">Wyślij <span class="form__field--button-text">Formularz</span></button>
+        </fieldset>
+    </form>
+</div>
+    <script src="https://cdn.rawgit.com/eligrey/FileSaver.js/5ed507ef8aa53d8ecfea96d96bc7214cd2476fd2/FileSaver.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/generator.js"></script>

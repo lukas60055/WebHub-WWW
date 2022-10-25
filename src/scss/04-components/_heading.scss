@@ -1,0 +1,46 @@
+.heading {
+    &__h1 {
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 3rem;
+        color: $color-text;
+    }
+
+    &__h2 {
+        font-size: 2.2rem;
+        text-transform: uppercase;
+        color: $color-text;
+    }
+
+    &__h3 {
+        font-weight: 600;
+        font-size: 4rem;
+        color: $color-text;
+    }
+
+    &__h4 {
+        font-size: 1.85rem;
+        letter-spacing: .2rem;
+        color: $color-text;
+
+        @include medium {
+            font-size: 2.2rem;
+        }
+
+        @include large {
+            font-size: 2.7rem;
+        }
+    }
+
+    &--white {
+        color: $color-white;
+    }
+
+    &--green {
+        color: $color-green;
+    }
+
+    &--blueLite {
+        color: $color-blue-liteDark;
+    }
+}

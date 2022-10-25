@@ -1,0 +1,38 @@
+// 01. Variables, mixins
+@import "01-abstracts/variables";
+@import "01-abstracts/mixins";
+
+// 02. reset, setting
+@import "02-base/reset";
+@import "02-base/setting";
+
+// 03. container, row
+@import "03-objects/container";
+@import "03-objects/row";
+@import "03-objects/col";
+
+// 04. components
+@import "04-components/nav";
+@import "04-components/heading";
+@import "04-components/btn";
+@import "04-components/input";
+@import "04-components/typography";
+@import "04-components/utilities";
+@import "04-components/features";
+@import "04-components/statistics";
+@import "04-components/process";
+@import "04-components/table";
+@import "04-components/offer";
+@import "04-components/contact";
+@import "04-components/form";
+@import "04-components/cookie";
+@import "04-components/about-us";
+@import "04-components/error";
+
+// 05. pages
+@import "05-pages/header";
+@import "05-pages/section";
+@import "05-pages/footer";
+
+// AOS
+@import '../../node_modules/aos/dist/aos';

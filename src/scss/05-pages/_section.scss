@@ -1,0 +1,122 @@
+.site-section {
+    margin-bottom: 3.5rem;
+
+    @include large {
+        &:nth-of-type(3) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__logo {
+        display: block;
+        margin: .5rem auto 0;
+        max-width: 30rem;
+    }
+
+    &__paragraf {
+        text-align: center;
+
+        @include medium {
+            padding: 1rem 10rem;
+        }
+
+        @include large {
+            width: 60%;
+            margin: 0 auto;
+            padding: 1rem 0;
+        }
+    }
+
+    &__features {
+        @include medium {
+            width: 30rem;
+        }
+
+        @include large {
+            display: grid;
+            width: auto;
+            grid-template-columns: 10rem 40rem;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 5rem 0;
+            margin: 8rem 0 4rem;
+            justify-content: center;
+        }
+    }
+
+    &__statistics {
+        text-align: center;
+        margin-top: 1.5rem;
+
+        &:nth-of-type(2) {
+            margin-top: 4rem;
+
+            @include medium {
+                margin-top: 1.5rem;
+            }
+        }
+
+        &:nth-of-type(3) {
+            margin-top: 4rem;
+
+            @include medium {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 5rem;
+
+        &--size {
+            font-size: 3.5rem;
+        }
+    }
+
+    &__process {
+        text-align: center;
+        margin-bottom: 6rem;
+        z-index: 999;
+
+        &:last-of-type {
+            margin-bottom: 1rem;
+        }
+
+        @include medium {
+            margin-bottom: 0;
+        }
+    }
+
+    &__offer {
+        margin-top: 5rem;
+
+        @include medium {
+            margin-top: 6rem;
+        }
+
+        @include large {
+            margin-top: 7rem;
+        }
+    }
+
+    &__contact {
+        margin-top: 2rem;
+
+        @include large {
+            margin-top: 5rem;
+        }
+
+    }
+    &__about-us {
+        margin: 3rem auto 0;
+
+        @include medium {
+            padding: 0 3rem;
+        }
+
+        @include large {
+            max-width: 135rem;
+            margin-top: 5rem;
+        }
+    }
+}

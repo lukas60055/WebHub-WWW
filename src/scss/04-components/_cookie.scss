@@ -1,0 +1,31 @@
+.cookie {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 1.5rem 3rem;
+    font-size: 1.3rem;
+    color: $color-white;
+    background-color: black;
+    text-align: center;
+    z-index: 999999;
+
+    @include medium {
+        padding: .8rem 3rem;
+        font-size: 1.4rem;
+    }
+
+    &-btn {
+        display: block;
+        max-width: 20%;
+        margin: 1rem auto .5rem;
+        padding: 1rem;
+        border-radius: .3rem;
+        background-color: #00a99d;
+        cursor: pointer;
+
+        @include medium {
+            display: inline-block;
+            margin-left: 1.5rem;
+        }
+    }
+}

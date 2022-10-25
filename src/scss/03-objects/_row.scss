@@ -1,0 +1,9 @@
+.row {
+    display: flex;
+    flex-flow: column wrap;
+    // padding: 1.5rem;
+
+    @include medium {
+        flex-direction: row;
+    }
+}

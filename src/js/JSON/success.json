@@ -1,0 +1,7 @@
+[
+    ["div", {"class":"form__content--second"}, "ERROR:eq(undefined)"],
+    ["div", {"class":"valuation-success","style":"display: none;"}, "form__content--second:eq(0)"],
+    ["h2", {"class":"form__title--h2 form__field--type"}, "valuation-success:eq(0)", {"0":"Dziękujemy za skorzystanie z Naszych usług!"}],
+    ["p", {"class":"success","style":"text-align: center;"}, "valuation-success:eq(0)", {"0":"Już wkróte otrzymasz odpowiedź zwrotną na maila, z wyceną Twojej usługi."}],
+    ["a", {"class":"form__title--link", "href":"https://web-hub.pl/"}, "valuation-success:eq(0)", {"0":"Powrót na stronę główną"}]
+]
