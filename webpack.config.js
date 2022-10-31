@@ -6,7 +6,7 @@ const HtmlWebpackExcludeAssetsPlugin = require('html-webpack-exclude-assets-plug
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin  = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+// const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const JSONMinifyPlugin = require('node-json-minify');
 
 const ver = "1.0.5";
@@ -126,28 +126,28 @@ const config = function(env, args) {
          new webpack.ProvidePlugin({
             AOS: 'aos',
          }),
-         new FaviconsWebpackPlugin({
-            logo: './src/assets/favicon.png',
-            outputPath: 'assets/',
-            prefix: './assets',
-            mode: 'webapp',
-            devMode: 'webapp',
-            cache: !isProduction,
-            inject: false,
-            favicons: {
-               theme_color: '#FFFFFF',
-               icons: {
-                  android: false,
-                  appleIcon: false,
-                  appleStartup: false,
-                  coast: false,
-                  favicons: true,
-                  firefox: false,
-                  windows: false,
-                  yandex: false,
-               },
-            },
-         }),
+         // new FaviconsWebpackPlugin({
+         //    logo: './src/assets/favicon.png',
+         //    outputPath: 'assets/',
+         //    prefix: './assets',
+         //    mode: 'webapp',
+         //    devMode: 'webapp',
+         //    cache: !isProduction,
+         //    inject: false,
+         //    favicons: {
+         //       theme_color: '#FFFFFF',
+         //       icons: {
+         //          android: false,
+         //          appleIcon: false,
+         //          appleStartup: false,
+         //          coast: false,
+         //          favicons: true,
+         //          firefox: false,
+         //          windows: false,
+         //          yandex: false,
+         //       },
+         //    },
+         // }),
          new CopyWebpackPlugin([
             {
                from: path.resolve(__dirname, 'src', 'robots.txt'),
@@ -164,11 +164,11 @@ const config = function(env, args) {
                to: path.resolve(__dirname, 'dist', 'assets'),
                toType: 'dir',
             },
-            {
-               from: path.resolve(__dirname, 'src', 'php'),
-               to: path.resolve(__dirname, 'dist', 'php'),
-               toType: 'dir',
-            },
+            // {
+            //    from: path.resolve(__dirname, 'src', 'php'),
+            //    to: path.resolve(__dirname, 'dist', 'php'),
+            //    toType: 'dir',
+            // },
             {
                from: path.resolve(__dirname, 'src', 'js', 'JSON'),
                transform: function(content) {

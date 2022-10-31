@@ -1,6 +1,5 @@
 'use strict';
 
-import '../../node_modules/core-js/modules/es.array.iterator';
 import { notification } from './scripts.js';
 
 class Form {
