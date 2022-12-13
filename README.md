@@ -1,6 +1,6 @@
 # Web-Hub.pl - My first page
 
-This is my **first** website design that was created in 2020. Before starting the coding, I created the logo and website design in Adobe XD.
+This is my **first** website design that was created in 2020. Before starting the coding, I created the logo and website design in Adobe XD. *There are probably many bugs in this code, but for a first big project I'm proud of it.*
 
 * [scripts.js](src/js/scripts.js) -> Responsible for the proper operation of the entire website.
 * [valuation.js](src/js/valuation.js) -> Responsible for the operation of the application form. Among other things, it creates appropriate HTML tags with attributes and text, which it downloads from the JSON file. `[<tag>, {attributes}, <parent>, {<number parent>, <text>}]` JSON files can be created using a script [generator.js](/src/generator/js/generator.js). It is enough to create any layout in the HTML file that we want to generate, and then enter `download()` in the browser console. Of course, we need to have the generator.js file attached and a solution for saving files in the HTML file we want to generate. In my case, I used FileSaver.
