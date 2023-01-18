@@ -26,7 +26,7 @@ This is my **first** website design that was created in 2020. Before starting th
    ```sh
    npm install
    ```
-#### 3. Run application
+#### 3. Build application
    ```sh
-   npm watch
+   npm build
    ```
