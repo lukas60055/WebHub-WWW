@@ -28,5 +28,5 @@ This is my **first** website design that was created in 2020. Before starting th
    ```
 #### 3. Build application
    ```sh
-   npm build
+   npm run build
    ```
